@@ -117,14 +117,29 @@ p{
 }
 
 
+.call input[type=text] {
+  padding-left: 40px; 
+}
+
+
+.call {
+  position: relative;
+}
+
+.call img {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  padding: 0px 10px;
+}
 
 @media screen and (max-width: 989px) {
   
 .one {
   /*display: none;*/
   max-height: 85vh;
-  border-radius: 0  0 10px 10px;
-  /*box-shadow: 2px 4px 4px 4px black;*/
+  border-radius: 0  0 20px 20px;
+  box-shadow: 1px 2px 2px 2px #5ac8fa;
 }
 
 
