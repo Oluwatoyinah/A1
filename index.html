@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body onload="fresh()">
 
 
 
@@ -130,7 +130,96 @@
 </div>
 
 
+<div id="overlay">
+  <div class="" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        <div class="tx-center">
+          <div class="imgcontainer">
+              <img src="LOGO.svg">
+          </div>
+          <p class="col-md-9 mx-auto">Learn Anything, Anywhere and Get the Best Grades in Your Examinations</p>
+        </div>
+        
 
+        <div class="container mt-3 mb-sm-1">
+              <div class="d-flex pb-3">
+                <img src="./img/video.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="Instructional-videos2">Interactive Instructional Videos: Enjoy the best of blended learning with our high-quality, Interactive videos.</p>
+              </div>
+
+              <div class="d-flex pb-3">
+                <img src="./img/hand.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="mock-test2">Online/Offline Mock Test(CBT): Get access to 20, 000 + WAEC, JAMB, GSCE, NECO, A-LEVELS & other Examinations Questions and Solution Explanation.</p>
+              </div>
+
+              <div class="d-flex pb-3">
+                <img src="./img/book2.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="lesson-note2">Concise Lesson Note: Comprehensive, detailed, up-to-date and self explanatory notes spanning all topics.</p>
+              </div>
+
+              <div class="d-flex pb-3">
+                <img src="./img/patient.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="tutor2">Ask a Tutor: Get help from expert tutors through our 24/7 Tutor Live Chat.</p>
+              </div>
+
+               <button type="button" class="btn download" onclick="proceed()">Proceed</button>
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+
+//modal pops up onload
+  function fresh() {
+    document.getElementById('overlay').style.display = "block";
+  }
+
+
+
+//proceed button removes the modal
+  function proceed() {
+
+      document.getElementById('overlay').style.display = "none";
+  }
+</script>
+
+
+
+
+<script type="text/javascript">
+  // at maxwidth of 989px content will change when on mobile
+
+
+  const media = () =>{
+    let q = matchMedia("(max-width:989px)");
+    if (q.matches) {
+      document.getElementById('lastname').style.display = "none";
+      document.getElementById('mock-test2').innerHTML = "Online/Offline Mock Test(CBT)";
+      document.getElementById('Instructional-videos2').innerHTML = "Online/Offline Interactive Instructional Videos";
+      document.getElementById('lesson-note2').innerHTML = "Concise Lesson Note";
+      document.getElementById('tutor2').innerHTML = "Ask a Tutor";
+      document.getElementById('firstname').placeholder = "Full Name";
+      document.getElementById('overlay').style.display = "block";
+
+      
+      
+
+    }
+    else {
+      document.getElementById('lastname').style.display = "block";
+     document.getElementById('overlay').style.display = "none";
+
+    }
+  }
+  onload = media;
+  onresize = media;
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
