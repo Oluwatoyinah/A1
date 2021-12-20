@@ -121,48 +121,14 @@ p{
 @media screen and (max-width: 989px) {
   
 .one {
-  display: none;
-  min-height: 80vh;
+  /*display: none;*/
+  max-height: 95vh;
   border-radius: 0  0 60px 60px;
 }
 
 
-#quiz2 {
+#quiz {
   visibility: hidden;
-}
-
-.modal-body {
-  background-image: url('img/jss.png');
-  background-position: center;
-  background-size: cover;
-  display: grid;
-  place-content: center;
-  color: white;
-  position: relative;
-  isolation: isolate;
-  top: 10%;
-
-}
-
-.modal-body::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  z-index: -1;
-  background: #0d1a26;
-  opacity: 0.9;
-}
-
-#overlay {
-  position: absolute;
-  inset: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  align-items: center;
-  background-color: rgba(0 0 0 / 0.6);
-
 }
 
 }
