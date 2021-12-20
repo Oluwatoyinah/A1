@@ -122,9 +122,9 @@ p{
   
 .one {
   /*display: none;*/
-  max-height: 90vh;
+  max-height: 85vh;
   border-radius: 0  0 10px 10px;
-  box-shadow: 2px 4px 4px 4px #5ac8fa;
+  /*box-shadow: 2px 4px 4px 4px black;*/
 }
 
 
