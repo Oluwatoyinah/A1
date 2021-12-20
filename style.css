@@ -136,13 +136,14 @@ p{
 @media screen and (max-width: 989px) {
   
 .one {
-  /*display: none;*/
-  max-height: 85vh;
+  max-height: 75vh;
   border-radius: 0  0 20px 20px;
   box-shadow: 1px 2px 2px 2px #5ac8fa;
 }
 
-
+.two {
+  height: 80vh;
+}
 #quiz {
   visibility: hidden;
 }
