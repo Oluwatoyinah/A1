@@ -7,6 +7,7 @@
   <title>A1Tutor</title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-5 one">
+    <div class="col-lg-6 one">
 
         <div class="tx-center">
           <div class="imgcontainer">
@@ -24,25 +25,25 @@
         </div>
         
 
-        <div class="container mt-5 mb-5">
-              <div class="d-flex pb-2">
-                <img src="./img/note.svg" width="25" height="25" alt="" srcset="" class="me-3 mt-1"><p>Interactive Instructional Videos: Enjoy the best of blended learning with our high-quality, Interactive videos.</p>
+        <div class="container mt-5 mb-lg-5 mb-sm-3">
+              <div class="d-flex pb-3">
+                <img src="./img/video.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="Instructional-videos">Interactive Instructional Videos: Enjoy the best of blended learning with our high-quality, Interactive videos.</p>
               </div>
 
-              <div class="d-flex pb-2">
-                <img src="./img/note.svg" width="25" height="25" alt="" srcset="" class="me-3 mt-1"><p>Online/Offline Mock Test(CBT): Get access to 20, 000 + WAEC, JAMB, GSCE, NECO, A-LEVELS & other Examinations Questions and Solution Explanation.</p>
+              <div class="d-flex pb-3">
+                <img src="./img/hand.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="mock-test">Online/Offline Mock Test(CBT): Get access to 20, 000 + WAEC, JAMB, GSCE, NECO, A-LEVELS & other Examinations Questions and Solution Explanation.</p>
               </div>
 
-              <div class="d-flex pb-2">
-                <img src="./img/note.svg" width="25" height="25" alt="" srcset="" class="me-3 mt-1"><p>Concise Lesson Note: Comprehensive, detailed, up-to-date and self explanatory notes spanning all topics.</p>
+              <div class="d-flex pb-3">
+                <img src="./img/book2.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="lesson-note">Concise Lesson Note: Comprehensive, detailed, up-to-date and self explanatory notes spanning all topics.</p>
               </div>
 
-              <div class="d-flex pb-2">
-                <img src="./img/note.svg" width="25" height="25" alt="" srcset="" class="me-3 mt-1"><p>Ask a Tutor: Get help from expert tutors through our 24/7 Tutor Live Chat.</p>
+              <div class="d-flex pb-3">
+                <img src="./img/patient.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="tutor">Ask a Tutor: Get help from expert tutors through our 24/7 Tutor Live Chat.</p>
               </div>
 
-              <div class="d-flex pb-2">
-                <img src="./img/note.svg" width="25" height="25" alt="" srcset="" class="me-3 mt-1"><p>Quiz & Performance Analysis: Assess your knowledge with our topic-related quizzes at the end of each lesson.</p>
+              <div class="d-flex pb-3" id="quiz">
+                <img src="./img/book.svg" width="35" height="35" alt="" srcset="" class="me-3"><p>Quiz & Performance Analysis: Assess your knowledge with our topic-related quizzes at the end of each lesson.</p>
               </div>
       </div>
     </div>
@@ -50,7 +51,7 @@
 
       
 
-    <div class="col-lg-7 two">
+    <div class="col-lg-6 two">
 
         <div class="title row mb-5">
           <h3 class=" col-md-10 tx-20 mx-auto">Get 7 Days Free Trial to Start Learning with Fun</h3>
@@ -61,11 +62,11 @@
           <div class="row justify-content-between">
 
             <div class="col-sm-12 mt-3">
-                <input type="text" class="form-control" id="" placeholder="First Name">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name">
             </div>
 
 
-            <div class="col-sm-12 mt-3">
+            <div class="col-sm-12 mt-3" id="lastname">
                 <input type="text" class="form-control" id="" placeholder="Last Name">
             </div>
 
@@ -127,6 +128,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
