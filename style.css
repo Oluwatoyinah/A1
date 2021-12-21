@@ -133,63 +133,40 @@ p{
   padding: 0px 10px;
 }
 
-.scroll {
-  display: none;
-}
+
 
 .form-control input:focus {
   outline: 0;
   border-color: var(--white);
 }
 
+.proceed {
+  visibility: hidden;
+}
+
+
 @media screen and (max-width: 989px) {
   
 .one {
-  height: 90vh;
+  min-height: 90vh;
   border-radius: 0  0 20px 20px;
   box-shadow: 1px 2px 2px 2px #5ac8fa;
   position: relative;
 }
 
-
-.scroll {
-  position: absolute;
-  bottom: 30px;
-  left: 5px;
-  display: block;
-}
-
-.scroll p {
-  font-weight: bold;
-  font-style: italic;
-  transform: rotateZ(90deg);
-  color:  #5ac8fa;
-  animation: toyin 2.4s ease-in-out infinite;
-}
 .two {
   height:100vh;
 }
-#quiz {
+.container #quiz {
   visibility: hidden;
+  padding-bottom: 0px;
 }
 
-/*@keyframes toyin {
-    
-    0%, 100%{
-
-       transform: rotateZ(90deg); 
-    }
-
-    25%, 75% {
-       transform: rotateZ(22.5deg); 
-    }
-    
-
-    50%{
-       transform: rotateZ(45deg); 
-    }
-
-  } */
-
+.proceed {
+  visibility: visible;
+}
+.proceed a {
+  text-decoration: none;
+}
 
 }
