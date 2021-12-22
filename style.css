@@ -185,7 +185,10 @@ p{
 .modal-box {
   display: none;
   position: absolute;
-  inset: 0;
+  /*inset: 0;*/
+  top: 0;
+  left: 0;
+  width: 100vw;
   background-color: rgba(0 0 0 / 0.5);
   height: 100vh;
 
