@@ -164,7 +164,7 @@ p{
 }
 
 .two {
-  height:100vh;
+  max-height:100vh;
 }
 /*.container #quiz2 {
   visibility: hidden;
