@@ -166,7 +166,7 @@ p{
 }
 
 .two {
-  min-height:60vh;
+  min-height:85vh;
 }
 
 #content {
@@ -177,7 +177,7 @@ p{
 
 
 .success-wrapper-mobile {
-  margin: 0.6rem auto 0 auto;
+  margin: 0.3rem auto 0 auto;
   max-width: 300px;
 
 }
