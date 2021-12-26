@@ -164,11 +164,7 @@ p{
 }
 
 .two {
-  min-height:70vh;
-}
-.container #quiz {
-  visibility: hidden;
-  padding-bottom: 0px;
+  min-height:60vh;
 }
 
 #content {
@@ -187,7 +183,7 @@ p{
   flex-basis: 100%;
   max-width: 300px;
   border-radius: 10px;
-  transition: all 300ms ease-in-out;
+  /*transition: all 300ms ease-in-out;*/
   background-color: var(--white);
   padding: 2em;
   margin-bottom: 1rem;
@@ -210,11 +206,10 @@ p{
 
 
 
-
-
 .swiper {
     width: 100%;
     min-height: 300px;
+    position: relative;
   }
   
 
@@ -226,7 +221,12 @@ p{
   }
 
 
-
+.swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
 }
 

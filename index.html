@@ -7,8 +7,7 @@
   <title>A1Tutor</title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
+  <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
@@ -110,9 +109,15 @@
             
             <div class="swiper-pagination"></div>
 
-            <!-- If we need pagination --><!-- 
+          <!--   <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+
+            <!-- If we need pagination -->
             <div class="success-pagination"></div>
-            <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
            <!--  <div class="swiper-button-prev"></div>
@@ -243,37 +248,18 @@
 </script>
 
 
-
-    <!-- Initialize Swiper -->
-
-<!-- <script>
-     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script> -->
+<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
       });
     </script>
 
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>  
 </body>
