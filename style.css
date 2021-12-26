@@ -158,7 +158,7 @@ p{
 }
 .one {
   padding-top: 10px;
-  max-height: 75vh;
+  height: 75vh;
   border-radius: 0  0 20px 20px;
   box-shadow: 1px 2px 2px 2px #5ac8fa;
   display: grid;
@@ -166,7 +166,7 @@ p{
 }
 
 .two {
-  max-height:85vh;
+  min-height:60vh;
 }
 
 #content {
@@ -184,7 +184,7 @@ p{
 
 .box {
   flex-basis: 100%;
-  max-width: 300px;
+  max-width: 280px;
   border-radius: 10px;
   /*background-color: var(--white);*/
   padding: 2em;
