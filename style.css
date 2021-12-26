@@ -164,7 +164,7 @@ p{
 }
 
 .two {
-  min-height:60vh;
+  max-height:80vh;
 }
 
 #content {
