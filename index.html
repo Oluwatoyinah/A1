@@ -56,7 +56,7 @@
 
 
 <div class="success-wrapper-mobile" id="slide">
-          <div class="swiper">
+          <div class="swiper mySwiper">
 
             <div class="swiper-wrapper">
 
@@ -109,19 +109,8 @@
             
             <div class="swiper-pagination"></div>
 
-          <!--   <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div> -->
-
-            <!-- If we need pagination -->
-            <div class="success-pagination"></div>
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-           <!--  <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
+        
+            
           </div>
         </div>
     </div>
@@ -254,6 +243,7 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
         },
