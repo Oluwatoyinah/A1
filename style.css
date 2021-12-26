@@ -190,6 +190,8 @@ p{
   background-color: var(--white);
   padding: 2em;
   margin-bottom: 1rem;
+  background-color: rgba(255 255 255 / 0.3);
+  text-align: center;
 }
 
 .box-group {
@@ -197,16 +199,14 @@ p{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .box-group p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--grey);
   margin: 1rem 0;
 }
-.box-group h3 {
-  font-size: 2rem;
-  font-family: "CamptonBold";
-}
+
 
 
 
