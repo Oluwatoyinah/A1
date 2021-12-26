@@ -108,10 +108,11 @@
               </div>
             </div>
             
-
-            <!-- If we need pagination -->
-            <div class="success-pagination"></div>
             <div class="swiper-pagination"></div>
+
+            <!-- If we need pagination --><!-- 
+            <div class="success-pagination"></div>
+            <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
            <!--  <div class="swiper-button-prev"></div>
@@ -245,8 +246,21 @@
 
     <!-- Initialize Swiper -->
 
-<script>
+<!-- <script>
      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 30,
