@@ -7,6 +7,11 @@
   <title>A1Tutor</title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body onload="fresh()">
@@ -17,9 +22,7 @@
   <div class="row">
     <div class="col-lg-6 one">
 
-      <!-- <div class="scroll">
-        <p>Scroll down >></p>
-      </div> -->
+      
         <div class="tx-center mt-1">
           <div class="imgcontainer">
               <img src="LOGO.svg">
@@ -28,7 +31,7 @@
         </div>
         
 
-        <div class="container mt-3 mb-lg-1">
+        <div class="container mt-3 mb-lg-1" id="content">
               <div class="d-flex pb-3">
                 <img src="./img/video.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="Instructional-videos">Interactive Instructional Videos: Enjoy the best of blended learning with our high-quality, Interactive videos.</p>
               </div>
@@ -49,22 +52,76 @@
               <div class="d-flex pb-3" id="quiz">
                 <img src="./img/book.svg" width="35" height="35" alt="" srcset="" class="me-3"><p>Quiz & Performance Analysis: Assess your knowledge with our topic-related quizzes at the end of each lesson.</p>
               </div>
-<!-- 
-               <div class="d-flex pb-3 proceed">
-                <a href="#form" class="btn1 download">Proceed</a>
-              </div> -->
+
       </div>
 
-      <!-- <div class="container mt-2 mb-lg-5">
-               <div class="d-flex pb-3 proceed">
-                <a href="#form_intro" class="btn1 download">Proceed</a>
+
+<div class="success-wrapper-mobile" id="slide">
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-group">
+                    <div class="box-svg">
+                      <img src="./img/video.svg" alt="Happy Learners" />
+                    </div>
+                    <p>Online/Offline Mock Test(CBT)</p>
+                    
+                  </div>
+                </div>
               </div>
-      </div> -->
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-group">
+                    <div class="box-svg">
+                      <img src="./img/hand.svg" alt="Exam Success" />
+                    </div>
+                    <p>Online/Offline Interactive Instructional Videos</p>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-group">
+                    <div class="box-svg">
+                      <img src="./img/book2.svg" alt="CBT Questions" />
+                    </div>
+                    <p>Concise Lesson Note</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-group">
+                    <div class="box-svg">
+                      <img src="./img/patient.svg" alt="Content Approval" />
+                    </div>
+                    <p>Ask a Tutor</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
+            <!-- If we need pagination -->
+            <div class="success-pagination"></div>
+            <div class="swiper-pagination"></div>
 
-             
-
+            <!-- If we need navigation buttons -->
+           <!--  <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </div>
     </div>
+
+            
+
 
 
       
@@ -148,92 +205,10 @@
 
           </form>
     </div>
+
+
   </div>
 
-
-
-
-<!-- Modal -->
-<div class="modal-box" id="modal">
-  <div class="modal-dialog">
-    <div class="modal-content"  style="background: #0d1a26; color: white">
-     
-      <div class="modal-body">
-         <div class="tx-center mt-0">
-          <div class="imgcontainer">
-              <img src="LOGO.svg" width="50" height="40">
-          </div>
-          <p class="col-md-9 mx-auto">Learn Anything, Anywhere and Get the Best Grades in Your Examinations</p>
-        </div>
-        
-
-        <div class="container mt-3 mb-lg-1">
-              <div class="d-flex pb-3">
-                <img src="./img/video.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="Instructional-videos2">Interactive Instructional Videos: Enjoy the best of blended learning with our high-quality, Interactive videos.</p>
-              </div>
-
-              <div class="d-flex pb-3">
-                <img src="./img/hand.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="mock-test2">Online/Offline Mock Test(CBT): Get access to 20, 000 + WAEC, JAMB, GSCE, NECO, A-LEVELS & other Examinations Questions and Solution Explanation.</p>
-              </div>
-
-              <div class="d-flex pb-3">
-                <img src="./img/book2.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="lesson-note2">Concise Lesson Note: Comprehensive, detailed, up-to-date and self explanatory notes spanning all topics.</p>
-              </div>
-
-              <div class="d-flex pb-3">
-                <img src="./img/patient.svg" width="35" height="35" alt="" srcset="" class="me-3 mb-sm-1"><p id="tutor2">Ask a Tutor: Get help from expert tutors through our 24/7 Tutor Live Chat.</p>
-              </div>
-
-              <!-- <div class="d-flex pb-3">
-                <button class="btn1 download" onclick="cancel()">Proceed</button>
-              </div> -->
-              <div class="row start">
-            <a href="#" class="btn1 download mx-auto" onclick="cancel()" 
-                  >Proceed
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  
-                  </svg>
-                </a>
-              </div>
-
-
-              
-
-              
-
-      </div>
-
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-
-
-
-
-<script>
-const myTimeout = setTimeout(toyin, 1000);
-
-function toyin() {
-  document.getElementById('modal').style.display = "block";
-}
-
-
-function cancel() {
-  document.getElementById('modal').style.display = "none";
-}
-</script>
 
 
 
@@ -242,24 +217,23 @@ function cancel() {
 <script type="text/javascript">
   // at maxwidth of 989px content will change when on mobile
 
-
   const media = () =>{
-    let q = matchMedia("(max-width:989px)");
+    let q = matchMedia("(max-width:992px)");
+    
     if (q.matches) {
       document.getElementById('lastname').style.display = "none";
-      document.getElementById('mock-test2').innerHTML = "Online/Offline Mock Test(CBT)";
-      document.getElementById('Instructional-videos2').innerHTML = "Online/Offline Interactive Instructional Videos";
-      document.getElementById('lesson-note2').innerHTML = "Concise Lesson Note";
-      document.getElementById('tutor2').innerHTML = "Ask a Tutor";
+      // document.getElementById('mock-test').innerHTML = "Online/Offline Mock Test(CBT)";
+      // document.getElementById('Instructional-videos').innerHTML = "Online/Offline Interactive Instructional Videos";
+      // document.getElementById('lesson-note').innerHTML = "Concise Lesson Note";
+      // document.getElementById('tutor').innerHTML = "Ask a Tutor";
+
       document.getElementById('firstname').placeholder = "Full Name";
 
-      
-      
 
     }
     else {
       document.getElementById('lastname').style.display = "block";
-      document.getElementById('modal').style.display = "none";
+      
 
     }
   }
@@ -268,6 +242,24 @@ function cancel() {
 </script>
 
 
+
+    <!-- Initialize Swiper -->
+
+<script>
+     var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>  
 </body>
