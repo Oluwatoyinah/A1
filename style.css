@@ -157,14 +157,16 @@ p{
   display: block;
 }
 .one {
-  padding-top: 20px;
-  max-height: 70vh;
+  padding-top: 10px;
+  max-height: 75vh;
   border-radius: 0  0 20px 20px;
   box-shadow: 1px 2px 2px 2px #5ac8fa;
+  display: grid;
+  place-content: center;
 }
 
 .two {
-  max-height:80vh;
+  max-height:85vh;
 }
 
 #content {
@@ -175,15 +177,16 @@ p{
 
 
 .success-wrapper-mobile {
-  margin: 1rem auto 0 1rem;
+  margin: 0.6rem auto 0 auto;
   max-width: 300px;
+
 }
 
 .box {
   flex-basis: 100%;
   max-width: 300px;
   border-radius: 10px;
-  background-color: var(--white);
+  /*background-color: var(--white);*/
   padding: 2em;
   margin-bottom: 0.3rem;
   background-color: rgba(255 255 255 / 0.3);
