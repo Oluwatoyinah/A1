@@ -7,15 +7,9 @@
   <title>A1Tutor</title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body onload="fresh()">
-
-
 
 <div class="container-fluid">
   <div class="row">
@@ -51,68 +45,8 @@
               <div class="d-flex pb-3" id="quiz">
                 <img src="./img/book.svg" width="35" height="35" alt="" srcset="" class="me-3"><p>Quiz & Performance Analysis: Assess your knowledge with our topic-related quizzes at the end of each lesson.</p>
               </div>
-
-      </div>
-
-
-<div class="success-wrapper-mobile" id="slide">
-          <div class="swiper mySwiper">
-
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="box">
-                  <div class="box-group">
-                    <div class="box-svg">
-                      <img src="./img/video.svg" alt="Happy Learners" />
-                    </div>
-                    <p>Online/Offline Mock Test(CBT)</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box">
-                  <div class="box-group">
-                    <div class="box-svg">
-                      <img src="./img/hand.svg" alt="Exam Success" />
-                    </div>
-                    <p class="tx-14">Online/Offline Interactive Instructional Videos</p>
-                    
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="box">
-                  <div class="box-group">
-                    <div class="box-svg">
-                      <img src="./img/book2.svg" alt="CBT Questions" />
-                    </div>
-                    <p>Concise Lesson Note</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box">
-                  <div class="box-group">
-                    <div class="box-svg">
-                      <img src="./img/patient.svg" alt="Content Approval" />
-                    </div>
-                    <p>Ask a Tutor</p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-pagination"></div>
-
-        
-            
-          </div>
         </div>
+
     </div>
 
           
@@ -197,7 +131,6 @@
                 </a>
               </div>
 
-
           </form>
     </div>
 
@@ -217,19 +150,11 @@
     
     if (q.matches) {
       document.getElementById('lastname').style.display = "none";
-      // document.getElementById('mock-test').innerHTML = "Online/Offline Mock Test(CBT)";
-      // document.getElementById('Instructional-videos').innerHTML = "Online/Offline Interactive Instructional Videos";
-      // document.getElementById('lesson-note').innerHTML = "Concise Lesson Note";
-      // document.getElementById('tutor').innerHTML = "Ask a Tutor";
-
       document.getElementById('firstname').placeholder = "Full Name";
-
-
     }
     else {
       document.getElementById('lastname').style.display = "block";
-      
-
+     
     }
   }
   onload = media;
@@ -237,18 +162,7 @@
 </script>
 
 
-<!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-         spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>  
