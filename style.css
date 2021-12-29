@@ -32,6 +32,23 @@ body {
   padding: 20px 3%;
 }
 
+.one::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  background: #0d1a26;
+  opacity: 0.9;
+}
+
+
+
+
+/*
+===================================
+LOGO containers
+===================================*/
 
 .imgcontainer {
   text-align: center;
@@ -44,16 +61,15 @@ body {
   display: none;
 }
 
-.one::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  z-index: -1;
-  background: #0d1a26;
-  opacity: 0.9;
-}
 
+
+.two {
+  display: grid;
+  place-content : center;
+  height: 100vh;
+  padding-left: 6%;
+  padding-right: 6%;
+}
 
 .title {
   text-align: center;
@@ -61,14 +77,6 @@ body {
 
 p{
   font-size: 0.875rem;
-}
-
-.two {
-	display: grid;
-	place-content : center;
-	height: 100vh;
-  padding-left: 6%;
-  padding-right: 6%;
 }
 
 
@@ -127,6 +135,12 @@ p{
 }
 
 
+
+/*
+===================================
+FORM
+===================================*/
+
 .call input[type=text] {
   padding-left: 45px; 
 }
@@ -162,6 +176,11 @@ p{
   min-height:100vh;
 }
 
+
+/*
+===================
+BLUE LOGO ON WEB
+===================*/
 .imgcontainer2 {
   display: block;
 }
