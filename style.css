@@ -169,8 +169,21 @@ FORM
 
 @media screen and (max-width: 576px) {
 
+.one {
+  background-image: none;
+  height: 70vh;
+  display: block;
+  color: #1a1a1f;
+  padding: 20px 3% 10px ;
+}
+
+.one::before {
+  opacity: 0;
+}
+
 .two {
   height:80vh;
+  display: block;
 }
 
 .head1 {
@@ -181,15 +194,12 @@ FORM
   display: block;
 }
 
-.one {
+/*.one {
   background-image: none;
   color: #1a1a1f;
   max-height: 70vh;
-}
+}*/
 
-.one::before {
-  opacity: 0;
-}
 
 
 }
