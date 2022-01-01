@@ -170,7 +170,7 @@ FORM
 @media screen and (max-width: 576px) {
 
 .two {
-  min-height:40vh;
+  height:80vh;
 }
 
 .head1 {
@@ -184,7 +184,7 @@ FORM
 .one {
   background-image: none;
   color: #1a1a1f;
-  height: 80vh;
+  max-height: 70vh;
 }
 
 .one::before {
