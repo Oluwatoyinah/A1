@@ -58,10 +58,12 @@ LOGO containers
 .imgcontainer2 {
   text-align: center;
   margin: 24px 0 12px 0;
-  display: none;
+  /*display: none;*/
 }
 
-
+ .head2 {
+  display: none;
+ }
 
 .two {
   display: grid;
@@ -165,24 +167,28 @@ FORM
 }
 
 
-
 @media screen and (max-width: 576px) {
 
-.one {
+.two {
+  min-height:40vh;
+}
+
+.head1 {
   display: none;
 }
 
-.two {
-  min-height:100vh;
+.head2 {
+  display: block;
 }
 
+.one {
+  background-image: none;
+  color: #1a1a1f;
+  height: 80vh;
+}
 
-/*
-===================
-BLUE LOGO ON WEB
-===================*/
-.imgcontainer2 {
-  display: block;
+.one::before {
+  opacity: 0;
 }
 
 

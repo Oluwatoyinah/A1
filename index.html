@@ -15,13 +15,19 @@
   <div class="row">
     <div class="col-lg-6 one">
       
-        <div class="tx-center mt-2">
+        <div class="tx-center mt-2 head1">
           <div class="imgcontainer">
               <img src="LOGO.svg">
           </div>
           <p class="col-md-9 mx-auto">Learn Anything, Anywhere and Get the Best Grades in Your Examinations</p>
         </div>
         
+        <div class="tx-center mt-3 head2">
+          <div class="imgcontainer2">
+              <img src="./img/LOGO.jpg" width="60">
+          </div>
+          <p class="col-md-9 mx-auto">Learn Anything, Anywhere and Get the Best Grades in Your Examinations</p>
+        </div>
 
         <div class="container mt-3" id="content">
               <div class="d-flex pb-3">
@@ -41,7 +47,7 @@
               </div>
               
 
-              <div class="d-flex pb-3" id="quiz">
+              <div class="d-flex pb-3 d-none d-sm-none d-md-flex">
                 <img src="./img/book.svg" width="35" height="35" alt="" srcset="" class="me-3"><p>Quiz & Performance Analysis: Assess your knowledge with our topic-related quizzes at the end of each lesson.</p>
               </div>
         </div>
@@ -56,7 +62,7 @@
 
     <div class="col-lg-6 two" id="form">
 
-        <div class="tx-center mt-3">
+        <div class="tx-center mt-3 d-none d-sm-none d-md-none d-lg-block">
           <div class="imgcontainer2">
               <img src="./img/LOGO.jpg" width="60">
           </div>
@@ -152,10 +158,15 @@
 
   // at maxwidth of 989px content will change when on mobile
   const media = () =>{
-    let q = matchMedia("(max-width:992px)");
+    let q = matchMedia("(max-width:576px)");
     
     if (q.matches) {
       document.getElementById('lastname').style.display = "none";
+       document.getElementById('Instructional-videos').innerHTML = "Online/Offline Interactive Instructional Videos";
+       document.getElementById('mock-test').innerHTML = "Online/Offline Mock Test(CBT)";
+       document.getElementById('lesson-note').innerHTML = "Concise Lesson Note";
+       document.getElementById('tutor').innerHTML = "Ask a Tutor";
+        // document.getElementById('quiz').style.display = "none";
       document.getElementById('firstname').placeholder = "Full Name";
     }
     else {
