@@ -62,7 +62,7 @@
 
     <div class="col-lg-6 two" id="form">
 
-        <div class="tx-center mt-3 d-none d-sm-none d-md-none d-lg-block">
+        <div class="tx-center mt- d-none d-sm-none d-md-none d-lg-block">
           <div class="imgcontainer2">
               <img src="./img/LOGO.jpg" width="60">
           </div>
@@ -76,25 +76,25 @@
         <form action="action_page.php" method="post">
           <div class="row justify-content-between">
 
-            <div class="col-sm-12 mt-3 call">
+            <div class="col-sm-12 mt-3 start-form">
                 <input type="text" class="form-control" id="firstname" placeholder="First Name">
                 <img src="./img/Profile.svg" alt="" srcset="">
             </div>
 
 
-            <div class="col-sm-12 mt-3 call" id="lastname">
+            <div class="col-sm-12 mt-3 start-form" id="lastname">
                 <input type="text" class="form-control" id="" placeholder="Last Name">
                 <img src="./img/Profile.svg" alt="" srcset="">
             </div>
 
 
-            <div class="col-sm-6 mt-3 call">
+            <div class="col-sm-6 mt-3 start-form">
                 <input type="text" class="form-control" id="" placeholder="Email">
                 <img src="./img/Message.svg" alt="" srcset="">
             </div>
 
 
-            <div class="col-sm-6 mt-3 call">
+            <div class="col-sm-6 mt-3 start-form">
                 <input type="text" class="form-control" id="" placeholder="Phone Number">
                 <img src="./img/call.png" alt="" srcset="">
             </div>
@@ -145,7 +145,6 @@
           </form>
     </div>
 
-
   </div>
 
 
@@ -166,8 +165,8 @@
        document.getElementById('mock-test').innerHTML = "Online/Offline Mock Test(CBT)";
        document.getElementById('lesson-note').innerHTML = "Concise Lesson Note";
        document.getElementById('tutor').innerHTML = "Ask a Tutor";
-        // document.getElementById('quiz').style.display = "none";
       document.getElementById('firstname').placeholder = "Full Name";
+
     }
     else {
       document.getElementById('lastname').style.display = "block";

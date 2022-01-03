@@ -22,7 +22,7 @@ body {
   background-image: url('img/jss.png');
   background-position: center;
   background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 	display: grid;
 	place-content: center;
 	color: white;
@@ -68,7 +68,7 @@ LOGO containers
 .two {
   display: grid;
   place-content : center;
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -143,16 +143,16 @@ p{
 FORM
 ===================================*/
 
-.call input[type=text] {
+.start-form input[type=text] {
   padding-left: 45px; 
 }
 
 
-.call {
+.start-form {
   position: relative;
 }
 
-.call img {
+.start-form img {
   position: absolute;
   left: 12px;
   top: 10px;
@@ -167,23 +167,26 @@ FORM
 }
 
 
+
+
 @media screen and (max-width: 576px) {
 
 .one {
   background-image: none;
-  height: 70vh;
-  display: block;
   color: #1a1a1f;
-  padding: 20px 3% 10px ;
+  display: block;
+  min-height: 40vh;
+  padding-bottom: 0;
+}
+
+.two {
+  display: block;
+  padding-top: 10px;
+  min-height: 40vh; 
 }
 
 .one::before {
   opacity: 0;
-}
-
-.two {
-  height:70vh;
-  display: block;
 }
 
 .head1 {
@@ -194,13 +197,17 @@ FORM
   display: block;
 }
 
-/*.one {
-  background-image: none;
-  color: #1a1a1f;
-  max-height: 70vh;
-}*/
+}
 
 
+
+
+@media screen and (max-width: 989px) {
+
+ .one {
+      border-radius: 0 0 25px 25px ;
 
 }
 
+
+}
