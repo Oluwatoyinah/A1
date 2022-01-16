@@ -73,34 +73,35 @@
         </div>
 
 
-        <form action="action_page.php" method="post">
+        <form name="startForm">
           <div class="row justify-content-between">
 
             <div class="col-sm-12 mt-3 start-form">
-                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
                 <img src="./img/Profile.svg" alt="" srcset="">
+                <!-- <p id="info"></p> -->
             </div>
 
 
-            <div class="col-sm-12 mt-3 start-form" id="lastname">
-                <input type="text" class="form-control" id="" placeholder="Last Name" required>
+            <div class="col-sm-12 mt-3 start-form" name="lastname" id="lastname">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
                 <img src="./img/Profile.svg" alt="" srcset="">
             </div>
 
 
             <div class="col-sm-6 mt-3 start-form">
-                <input type="email" class="form-control" id="" placeholder="Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" onchange="mail()">
                 <img src="./img/Message.svg" alt="" srcset="">
             </div>
 
 
             <div class="col-sm-6 mt-3 start-form">
-                <input type="text" class="form-control" id="" placeholder="Phone Number">
+                <input type="text" class="form-control" name="phonenumber" id="phonenumber" placeholder="07088888888" onchange="toyin()">
                 <img src="./img/call.png" alt="" srcset="">
             </div>
 
             <div class="row start">
-              <input type="submit" class="mx-auto form-control btn1 download" id="" placeholder="Get Started">
+              <input type="submit" class="mx-auto form-control btn1 download" id="" placeholder="Get Started" onclick="done()">
             </div>
             
 
@@ -160,7 +161,6 @@
 
 <script type="text/javascript">
 
-
   // at maxwidth of 989px content will change when on mobile
   const media = () =>{
     let q = matchMedia("(max-width:576px)");
@@ -176,7 +176,7 @@
     }
     else {
       document.getElementById('lastname').style.display = "block";
-     
+   // $('#info').hide();     
     }
   }
   onload = media;
@@ -184,6 +184,66 @@
 
 
 
+// ====================================
+//  VALIDATION
+// ====================================
+
+//PHONE NUMBER
+function toyin() {
+  var d = document.getElementById('phonenumber').value;
+
+
+// Phone number with plus sign at the front
+  var phone = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+
+// Validating a 11 digits phone number
+  var phone1 = /^\d{11}$/;
+
+
+//North America phone number
+  var phone2 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+//Phone number with country code
+  var phone3 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+  if(d.match(phone) || d.match(phone1) || d.match(phone2) || d.match(phone3)) {
+    // alert("phone  number is in the right form");
+    true;
+  } else{
+    alert("Invalid Phone Number");
+  }
+}
+
+
+
+// EMPTY INPUT FIELD
+function done() {
+  var a = document.getElementById('firstname').value;
+  var b = document.getElementById('lastname').value;
+  const c = document.getElementById('email').value;
+  var d = document.getElementById('phonenumber').value;
+
+  
+
+   if (a == "" || b == "" || c == "" || d == "") {
+    alert('Fill in the blank input field');
+   }
+
+}
+
+
+
+//EMAIL ADDRESS
+function mail() {
+  const c = document.getElementById('email').value;
+
+  var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(c.match(mail)) {
+    true;
+  } else{
+    alert("Invalid Email Address");
+  }
+}
 
 </script>
 
